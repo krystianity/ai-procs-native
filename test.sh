@@ -1,1 +1,1 @@
-./build.sh && cd ./test && docker build --rm --force-rm -t aip:test . && docker run --rm aip:test
+./build.sh && cd ./test && docker build --rm --force-rm -t aip:test . && docker run --rm -p 5560:5560 aip:test

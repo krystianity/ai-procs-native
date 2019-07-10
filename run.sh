@@ -1,1 +1,1 @@
-docker run --rm aip:local
+docker run --rm -p 5560:5560 aip:local

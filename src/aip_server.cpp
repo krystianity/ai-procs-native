@@ -27,7 +27,9 @@ int main(int argc, char **argv)
     auto metadata = aip::read_metadata(metadata_filepath);
     aip::metadata_info(metadata);
 
-    aip::torch_test();
+    auto model = aip::load_torch_model(model_filepath);
+
+    aip::run_zmq_server();
 
     return 0;
 }

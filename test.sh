@@ -1,4 +1,1 @@
-rm ./ai_procs
-clang++ -std=c++11 -o ai_procs src/test.cpp
-chmod 777 ./ai_procs
-./ai_procs
+./build.sh && cd ./test && docker build --rm --force-rm -t aip:test . && docker run --rm aip:test

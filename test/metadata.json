@@ -1,0 +1,154 @@
+{
+    "version": "0.2.0",
+    "options": {
+        "procs": [
+            "FillMissing",
+            "Normalize",
+            "Categorify"
+        ],
+        "cat_names": [
+            "age",
+            "thal"
+        ],
+        "dep_var": "target",
+        "fill_strategy": "MEDIAN",
+        "filler": 0,
+        "model_type": "PYTORCH"
+    },
+    "columns": {
+        "sex": {
+            "type": "NORMALIZED",
+            "mean": 0.6798245614035088,
+            "std": 0.46757031077414185,
+            "fill_type": "MEDIAN",
+            "median": 1.0
+        },
+        "cp": {
+            "type": "NORMALIZED",
+            "mean": 3.1228070175438596,
+            "std": 1.0208431418699746,
+            "fill_type": "MEDIAN",
+            "median": 3.0
+        },
+        "trestbps": {
+            "type": "NORMALIZED",
+            "mean": 131.6359649122807,
+            "std": 18.476414908618366,
+            "fill_type": "MEDIAN",
+            "median": 130.0
+        },
+        "chol": {
+            "type": "NORMALIZED",
+            "mean": 245.390350877193,
+            "std": 50.87993376359915,
+            "fill_type": "MEDIAN",
+            "median": 239.0
+        },
+        "fbs": {
+            "type": "NORMALIZED",
+            "mean": 0.14912280701754385,
+            "std": 0.3569932227136129,
+            "fill_type": "MEDIAN",
+            "median": 0.0
+        },
+        "restecg": {
+            "type": "NORMALIZED",
+            "mean": 0.9824561403508771,
+            "std": 0.9932144773752852,
+            "fill_type": "MEDIAN",
+            "median": 0.5
+        },
+        "thalach": {
+            "type": "NORMALIZED",
+            "mean": 150.01315789473685,
+            "std": 23.64392244103898,
+            "fill_type": "MEDIAN",
+            "median": 154.0
+        },
+        "exang": {
+            "type": "NORMALIZED",
+            "mean": 0.3508771929824561,
+            "std": 0.4782946236019544,
+            "fill_type": "MEDIAN",
+            "median": 0.0
+        },
+        "oldpeak": {
+            "type": "NORMALIZED",
+            "mean": 1.103947368421053,
+            "std": 1.1863141143198346,
+            "fill_type": "MEDIAN",
+            "median": 0.8
+        },
+        "slope": {
+            "type": "NORMALIZED",
+            "mean": 1.6228070175438596,
+            "std": 0.6210741140191902,
+            "fill_type": "MEDIAN",
+            "median": 2.0
+        },
+        "ca": {
+            "type": "NORMALIZED",
+            "mean": 0.6885964912280702,
+            "std": 0.9454047238987202,
+            "fill_type": "MEDIAN",
+            "median": 0.0
+        },
+        "age": {
+            "type": "CATEGORIZED",
+            "values": {
+                "58": 0,
+                "41": 1,
+                "67": 2,
+                "66": 3,
+                "71": 4,
+                "59": 5,
+                "61": 6,
+                "39": 7,
+                "51": 8,
+                "68": 9,
+                "63": 10,
+                "37": 11,
+                "44": 12,
+                "60": 13,
+                "49": 14,
+                "54": 15,
+                "77": 16,
+                "48": 17,
+                "52": 18,
+                "57": 19,
+                "65": 20,
+                "46": 21,
+                "40": 22,
+                "42": 23,
+                "53": 24,
+                "50": 25,
+                "64": 26,
+                "43": 27,
+                "45": 28,
+                "34": 29,
+                "55": 30,
+                "47": 31,
+                "62": 32,
+                "56": 33,
+                "29": 34,
+                "70": 35,
+                "38": 36,
+                "35": 37,
+                "69": 38
+            }
+        },
+        "thal": {
+            "type": "CATEGORIZED",
+            "values": {
+                "normal": 0,
+                "reversible": 1,
+                "fixed": 2,
+                "1": 3,
+                "2": 4
+            }
+        },
+        "target": {
+            "type": "DEPVAR"
+        }
+    }
+}
